@@ -1,24 +1,22 @@
-# Budget Tracker 
+# Budget Tracker
 
 ![GitHublicense](https://img.shields.io/npm/l/express?style=for-the-badge)
 
+## UO Coding bootcamp Challenge
 
 19. Progressive Web Applications (PWA) Challenge: Budget Tracker
 
-
-
-## UO Coding bootcamp Challenge
-
-
 ## Links
 
-Github Pages [Link]()
+~~[Github Pages]()~~
 
-Github Repository [Link](https://github.com/DuckArroyo/challenge19)
+[Github Repository](https://github.com/DuckArroyo/budgetTracker)
 
-Heroku [Link]()
+~~[Heroku]()~~
 
 ## Description
+
+Convert this application into a functional Progressive Web Application (PWA)
 
 ## Required installations for code duplication
 
@@ -59,17 +57,19 @@ sequelize - npm install sequelize
 
 DeveloperDuckArroyo
 
-[Portfolio](https://duckarroyo.github.io/challenge2/)
+[Email](mailto:DeveloperDuckArroyo@gmail.com)
+
+[Portfolio](https://github.com/DuckArroyo/portfolio)
+
+[React Portfolio](http://DuckArroyo.github.io/reactPortfolio)
 
 [GitHub](https://github.com/DuckArroyo)
 
 [Twitter @DevDuckArroyo](https://twitter.com/DevDuckArroyo)
 
-[LinkeIn](https://www.linkedin.com/in/duckarroyo/)
+[LinkedIn](https://www.linkedin.com/in/duckarroyo)
 
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
-
-[Email](mailto:DeveloperDuckArroyo@gmail.com)
 
 # Screnshots
 
