@@ -72,5 +72,3 @@ DeveloperDuckArroyo
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
 
 # Screnshots
-
-<img src="./.png" style="width: 400px">
