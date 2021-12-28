@@ -10,6 +10,8 @@
 
 - server is running on MAC.
 - HTML file is running on the browser.
--created:
+- created:
   - manifest.json
-  -service-worker.js
+  - service-worker.js
+  - idb.js
+    all saved within public
