@@ -1,7 +1,12 @@
 ## Things to install
 
-### on PC
+### on PC & MAC
 
 - npm i
 - npm install -g nodemon
-    - copy the script
+  - copy the script
+
+12/27
+
+- server is running on MAC.
+- HTML file is running on the browser.

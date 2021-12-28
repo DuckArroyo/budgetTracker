@@ -18,40 +18,24 @@
 
 Convert this application into a functional Progressive Web Application (PWA)
 
+
 ## Required installations for code duplication
 
-npm - npm install
+- npm - `npm install`
+- nodemon - `npm install -g nodemon`
+- express - `npm install express`
+- Mongoose - `npm install mongoose`
 
-.env - npm install dotenv
-
-bcrypt - npm install bcrypt
-
-Connect-session-sequelize - npm i connect-session-sequelize
-
-Express Handlebars - npm install express-handlebars
-
-Express-sessions - npm i express-session
-
-express - npm install express
-
-fs - npm install file-system --save
-
-inquirer - npm install inquirer
-
-Mongoose - npm install mongoose
-
-mysql2 - npm install mysql2
-
-sequelize - npm install sequelize
 
 ## The commandments
 
-"scripts": {
-"watch": "nodemon server.js",
-"test": "jest",
-"start": "node server.js",
-"seed": "node seeds/index.js"
-},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lite-server": "lite-server",
+    "develop": "nodemon server.js"
+  },
+
 
 # Contributions by:
 
