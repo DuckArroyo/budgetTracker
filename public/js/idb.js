@@ -15,7 +15,7 @@ request.onsuccess = function (e) {
 
   // once online upload
   if (navigator.onLine) {
-    // uploadPizza();
+    uploadBudget();
   }
 };
 
@@ -32,10 +32,38 @@ function saveRecord(record) {
 }
 
 function uploadBudget() {
-    const transaction = db.transaction(['new_budget'], 'readwrite');
+  const transaction = db.transaction(['new_budget'], 'readwrite');
 
-    const budgetObjectStore = transaction.objectStore('new_budget');
+  const budgetObjectStore = transaction.objectStore('new_budget');
 
-    const getAll = budgetOjectStore.getAll();
+  const getAll = budgetObjectStore.getAll();
 
+  getAll.onsuccess = function () {
+    if (getAll.result.length > 0) {
+      fetch('/api/transaction', {
+        method: 'POST',
+        body: JSON.stringify(getAll.result),
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => response.json())
+        .then((serverResponse) => {
+          if (serverResponse.message) {
+            throw new Error(serverResponse);
+          }
+          const transaction = db.transaction(['new_budget'], 'readwrite');
+          const budgetObjectStore = transaction.objectStore('new_budget');
+          budgetObjectStore.clear();
+
+          alert(
+            'Internet connection established, trasactions have been uploaded '
+          );
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
 }
