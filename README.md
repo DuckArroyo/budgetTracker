@@ -8,16 +8,15 @@
 
 ## Links
 
-~~[Github Pages]()~~
+~~[Github Pages]()~~ Not deployed to GitHub
 
 [Github Repository](https://github.com/DuckArroyo/budgetTracker)
 
-~~[Heroku]()~~
+[Heroku](https://young-ocean-36357.herokuapp.com/)
 
 ## Description
 
 Convert this application into a functional Progressive Web Application (PWA)
-
 
 ## Required installations for code duplication
 
@@ -26,16 +25,14 @@ Convert this application into a functional Progressive Web Application (PWA)
 - express - `npm install express`
 - Mongoose - `npm install mongoose`
 
-
 ## The commandments
 
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lite-server": "lite-server",
-    "develop": "nodemon server.js"
-  },
-
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "node server.js",
+"lite-server": "lite-server",
+"develop": "nodemon server.js"
+},
 
 # Contributions by:
 

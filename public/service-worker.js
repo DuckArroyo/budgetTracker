@@ -5,14 +5,23 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
   './manifest.json',
   './index.html',
-  './jss/index.js',
+  './js/index.js',
   './css/styles.css',
 ];
+
+self.addEventListener('fetch', function (e) {
+  console.log('fetch request : ' + e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function (request) {
+      return request || fetch(e.request);
+    })
+  );
+});
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      console.log('installing cache: ' + CACHE_NAME);
+      console.log('installing cache : ' + CACHE_NAME);
       return cache.addAll(FILES_TO_CACHE);
     })
   );
@@ -35,15 +44,6 @@ self.addEventListener('activate', function (e) {
           }
         })
       );
-    })
-  );
-});
-
-self.addEventListener('fetch', function (e) {
-  console.log('fetch request : ' + e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function (request) {
-      return request || fetch(e.request);
     })
   );
 });
