@@ -53,3 +53,11 @@ DeveloperDuckArroyo
 [CodePen](https://codepen.io/DeveloperDuckArroyo)
 
 # Screnshots
+
+<img src="./assets/1home.png" style="width: 400px">
+
+<img src="./assets/2entries.png" style="width: 400px">
+
+<img src="./assets/3download.png" style="width: 400px">
+
+<img src="./assets/4installed.png" style="width: 400px">
